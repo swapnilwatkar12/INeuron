@@ -11,11 +11,16 @@ public class Subset {
 
     }
 
+    
     private static boolean subset(int[] arr, int[] subArr) {
+        //traversing through main array
         for (int i = 0; i < arr.length; i++) {
+
+            //if first element of subarray is matched for loop will check for whole array
             if(subArr[0] == arr[i]){
                 boolean flag = true;
                 for (int index = 1; index < subArr.length; index++) {
+                    //if array index limit reached it will break loop
                     if(i+index >= arr.length){
                         flag = false;
                         break;
