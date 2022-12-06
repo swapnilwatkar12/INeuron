@@ -20,7 +20,7 @@ public class Subset {
             if(subArr[0] == arr[i]){
                 boolean flag = true;
                 for (int index = 1; index < subArr.length; index++) {
-                    //if array index limit reached it will break loop
+                    //if array index limit reached it will break loopa
                     if(i+index >= arr.length){
                         flag = false;
                         break;
