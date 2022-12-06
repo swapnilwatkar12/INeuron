@@ -2,7 +2,7 @@
 
 class Duplicates{
     public static void main(String[] args) {
-        int[] arr = {10,20,10,30,40,50,60,20,1,1,10,30,50,40,15}; // dummy array,
+        int[] arr = {10,20,10,30,40,50,60,20,40,15}; // dummy array,
 
         int[] ans = new int[arr.length];
         int ansPointer = 0;
