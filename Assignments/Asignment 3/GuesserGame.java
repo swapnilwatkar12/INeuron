@@ -23,7 +23,7 @@ class Guesser{
 		guessNum = (int)(Math.random()*(max+1));
 		
         System.out.println("\n=====================================");
-		System.out.println("Computer guessed the number in between 0 to " + max + " (Inclusive) " + guessNum);
+		System.out.println("Computer guessed the number in between 0 to " + max + " (Inclusive)" + guessNum);
         System.out.println("=====================================\n");
 
 		return guessNum;
@@ -91,7 +91,7 @@ class Umpire{
 	
 	void result(){
 		System.out.println("=====================================");
-		System.out.println("                  Results            ");
+		System.out.println("              Results                ");
 		System.out.println("=====================================\n");
 		for (int i = 0; i < player.length; i++) {
 			if(numFromGuesser == player[i].guessNum){
@@ -106,7 +106,7 @@ class Umpire{
 			}
 		}
 		System.out.println("=====================================");
-		System.out.println("                  End                ");
+		System.out.println("                End                  ");
 		System.out.println("=====================================\n");
 
 	}
@@ -118,11 +118,11 @@ class GuesserGame {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("=====================================");
-		System.out.println("             Guesser Game            ");
+		System.out.println("            Guesser Game             ");
         System.out.println("=====================================\n");
 
 
-		do{	
+		while(true){	
 
 			System.out.println("=====================================");
 			System.out.println("To start the press 1 and enter \nTo end the game press any number and enter");
@@ -138,7 +138,7 @@ class GuesserGame {
 			u.collectNumFromPlayers();
 			u.result();
 
-		}while(true);
+		}
         
     }
 }
