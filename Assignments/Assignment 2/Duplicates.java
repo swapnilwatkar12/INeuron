@@ -1,25 +1,8 @@
 
 
 class Duplicates{
-
-    // return number is repeated or not
-    public static boolean isRepeated(int[] arr, int num){
-        int count=0;
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i] == num){
-                count++;
-            }
-        }
-       
-        if(count>=2){
-            return true;
-        }
-        return false;
-    }
-
-    
     public static void main(String[] args) {
-        int[] arr = {10,20,10,30,40,50,60,20,10,30,50,40,15}; // dummy array
+        int[] arr = {10,20,10,30,40,50,60,20,1,1,10,30,50,40,15}; // dummy array,
 
         int[] ans = new int[arr.length];
         int ansPointer = 0;
@@ -49,5 +32,20 @@ class Duplicates{
         for (int i = 0; i < ansPointer; i++) {
             System.out.println(ans[i] + " ");
         }
+    }
+
+    // return number is repeated or not
+    public static boolean isRepeated(int[] arr, int num){
+        int count=0;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] == num){
+                count++;
+            }
+        }
+       
+        if(count>=2){
+            return true;
+        }
+        return false;
     }
 }
