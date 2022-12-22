@@ -1,4 +1,4 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+
 
 public class print5 {
     public static void main(String[] args) {
