@@ -7,7 +7,7 @@ public class RemoveDuplicates {
         for(int i=0;i<word.length();i++){
             char c = word.charAt(i);
 
-            if(!isPresent(c,ans)){
+            if(!isPresent(c,ans)){ // Add characters which are not present in ans variable
                 ans+=c;
             }
         }
